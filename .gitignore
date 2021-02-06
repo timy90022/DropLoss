@@ -13,7 +13,7 @@ output_resample
 
 
 *.jpg
-*.png
+# *.png
 *.txt
 *.json
 *.diff
