@@ -3,7 +3,7 @@ Ting-I Hsieh*, Esther Robb*, Hwann-Tzong Chen, Jia-Bin Huang
 
 
 ![Image](images/compare.png)
-This project is a pytorch implementation of *DropLoss for Long-Tail Instance Segmentation*. A majority of the code is modified from [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2) and [tztztztztz/eql.detectron2](https://github.com/tztztztztz/eql.detectron2).  
+This project is a pytorch implementation of *DropLoss for Long-Tail Instance Segmentation*. DropLoss improves long-tail instance segmentation by adaptively removing discouraging gradients to infrequent classes. A majority of the code is modified from [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2) and [tztztztztz/eql.detectron2](https://github.com/tztztztztz/eql.detectron2).  
 
 
 
