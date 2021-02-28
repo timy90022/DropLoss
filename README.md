@@ -1,13 +1,13 @@
 # DropLoss for Long-Tail Instance Segmentation
-Ting-I Hsieh, Esther Robb, Hwann-Tzong Chen, Jia-Bin Huang
+Ting-I Hsieh*, Esther Robb*, Hwann-Tzong Chen, Jia-Bin Huang
 
 
 ![Image](images/compare.png)
-This project is a pytorch implementation of *DropLoss for Long-Tail Instance Segmentation*. A majority of the code is modified from [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2) and [tztztztztz/eql.detectron2](https://github.com/tztztztztz/eql.detectron2).  
+This project is a pytorch implementation of *DropLoss for Long-Tail Instance Segmentation*. DropLoss improves long-tail instance segmentation by adaptively removing discouraging gradients to infrequent classes. A majority of the code is modified from [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2) and [tztztztztz/eql.detectron2](https://github.com/tztztztztz/eql.detectron2).  
 
 
 
-### What we are doing and going to do
+### Progress
 
 - [x] Training code.
 - [x] Evaluation code.
@@ -20,11 +20,12 @@ This project is a pytorch implementation of *DropLoss for Long-Tail Instance Seg
 - Linux or macOS with Python = 3.7
 - PyTorch = 1.4 and [torchvision](https://github.com/pytorch/vision/) that matches the PyTorch installation.
   Install them together at [pytorch.org](https://pytorch.org) to make sure of this
-- OpenCV is optional but needed by demo and visualization
+- OpenCV (optional but needed for demos and visualization)
 
 ### Build Detectron2 from Source
 gcc & g++ ≥ 5 are required. [ninja](https://ninja-build.org/) is recommended for faster build.
-After having them, run:
+
+After installing them, run:
 
 ```
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
@@ -39,7 +40,7 @@ python -m pip install -e detectron2
 CC=clang CXX=clang++ ARCHFLAGS="-arch x86_64" python -m pip install ......
 ```
 
-Please remove the latest fvcore package and install older version. run:
+Remove the latest fvcore package and install an older version:
 
 ```
 pip uninstall fvcore
@@ -48,7 +49,7 @@ pip install fvcore==0.1.1.post200513
 
 ## LVIS Dataset
 
-Following the instruction of [README.md](https://github.com/facebookresearch/detectron2/blob/master/datasets/README.md) to set up the lvis dataset.
+Following the instructions of [README.md](https://github.com/facebookresearch/detectron2/blob/master/datasets/README.md) to set up the LVIS dataset.
 
 
 ## Training
