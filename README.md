@@ -77,5 +77,12 @@ python train_net.py --config-file configs/droploss_mask_rcnn_R_50_FPN_1x.yaml --
 If you use DropLoss, please use the following BibTeX entry.
 
 ```BibTeX
-Coming soon
+@inproceedings{DBLP:conf/aaai/Ting21,
+  author 	= {Hsieh, Ting-I and Esther Robb and Chen, Hwann-Tzong and Jia-Bin Huang},
+  title     = {DropLoss for Long-Tail Instance Segmentation},
+  booktitle = {Proceedings of the Workshop on Artificial Intelligence Safety 2021
+               (SafeAI 2021) co-located with the Thirty-Fifth {AAAI} Conference on
+               Artificial Intelligence {(AAAI} 2021), Virtual, February 8, 2021},
+  year      = {2021}
+  }
 ```

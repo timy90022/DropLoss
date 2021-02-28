@@ -36,16 +36,18 @@
 </div> -->
 <div class="container-fluid" id="header">
   <div class="row">
-    <h1>Few-Shot Adaptation of Generative Adversarial Networks</h1>
+    <h1>DropLoss for Long-Tail Instance Segmentation</h1>
     <div class="authors">
-        <a href="http://www.estherrobb.com/" target="_blank">Esther Robb</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://l2ior.github.io/" target="_blank">Wen-Sheng Chu</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://users.umiacs.umd.edu/~abhishek/" target="_blank">Abhishek Kumar</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://filebox.ece.vt.edu/~jbhuang/" target="_blank">Jia-Bin Huang</a><sup>1</sup>
+        <a href="https://timy90022.github.io/about/" target="_blank">Ting-I Hsieh</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://www.estherrobb.com/" target="_blank">Esther Robb</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a><sup>1,3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://filebox.ece.vt.edu/~jbhuang/" target="_blank">Jia-Bin Huang</a><sup>2</sup>
       <p style="text-align:center;">
-        <sup>1</sup>Virginia Tech
+        <sup>1</sup>National Tsing Hua University
         &emsp;
-	<sup>2</sup>Google Research
+	<sup>2</sup>Virginia Tech
+	&emsp;
+	<sup>3</sup>Aeolus Robotics
       </p>
     </div>
   </div>
@@ -53,39 +55,31 @@
 <div class="container-fluid" id="teaser">
   <div class="row">
     <p style="text-align:center;">
-      <img width="800" src="3719_gen_grid.png">
+      <img width="800" src="../images/compare.png">
     </p>
   </div>
 </div>
 <div class="container" id="abstract">
   <h2>Abstract</h2>
-Generative Adversarial Networks (GANs) have shown remarkable performance in image synthesis tasks, but typically require a large number of training samples to achieve high-quality synthesis.
-This paper proposes a simple and effective method, Few-Shot GAN (FSGAN), for adapting GANs in few-shot settings (less than 100 images). 
-FSGAN repurposes component analysis techniques and learns to adapt the singular values of the pre-trained weights while freezing the corresponding singular vectors. 
-This provides a highly expressive parameter space for adaptation while constraining changes to the pretrained weights. 
-We validate our method in a challenging few-shot setting of 5-100 images in the target domain. 
-We show that our method has significant visual quality gains compared with existing GAN adaptation methods. 
-We report qualitative and quantitative results showing the effectiveness of our method. 
-We additionally highlight a problem for few-shot synthesis in the standard quantitative metric used by data-efficient image synthesis works.
-</div>
+Long-tailed class distributions are prevalent among the practical applications of object detection and instance segmentation. Prior work in long-tail instance segmentation addresses the imbalance of losses between rare and frequent categories by reducing the penalty for a model incorrectly predicting a rare class label. We demonstrate that the rare categories are heavily suppressed by correct background predictions, which reduces the probability for all foreground categories with equal weight. Due to the relative infrequency of rare categories, this leads to an imbalance that biases towards predicting more frequent categories. Based on this insight, we develop DropLoss -- a novel adaptive loss to compensate for this imbalance without a trade-off between rare and frequent categories. With this loss, we show state-of-the-art mAP across rare, common, and frequent categories on the LVIS dataset. </div>
 <div class="container" id="links">
   <h2>Links</h2>
   <div class="row"></div>
     <div class="col-sm-2">
-      <a href="https://arxiv.org/pdf/2010.11943.pdf" target="_blank">
+      <a href="https://timy90022.github.io/DropLoss/" target="_blank">
         <p style="text-align:center;">
           <img height="80" src="./NeurIPS2020/pdf.png"><br>
           Paper</p>
       </a>
     </div>
-
     <div class="col-sm-2">
-      <a href="https://github.com/e-271/few-shot-gan" target="_blank">
+      <a href="https://github.com/timy90022/DropLoss" target="_blank">
         <p style="text-align:center;">
           <img height="80" src="./NeurIPS2020/github.png"><br>
           Code</p>
       </a>
     </div>
+
   </div>
 </div>
 
@@ -96,12 +90,15 @@ We additionally highlight a problem for few-shot synthesis in the standard quant
   </div>
   <h4><b>BibTex</b></h4>
   <div>
-  <pre class="citation">@article{robb2020fsgan,
-	title   = {Few-Shot Adaptation of Generative Adversarial Networks},
-	author  = {Esther Robb and Wen-Sheng Chu and Abhishek Kumar and Jia-Bin Huang},
-	journal = {arXiv},
-	year    = {2020},
-  }</pre>
+  <pre class="citation">@inproceedings{DBLP:conf/aaai/Ting21,
+  author 	= {Hsieh, Ting-I and Esther Robb and Chen, Hwann-Tzong and Jia-Bin Huang},
+  title     = {DropLoss for Long-Tail Instance Segmentation},
+  booktitle = {Proceedings of the Workshop on Artificial Intelligence Safety 2021
+               (SafeAI 2021) co-located with the Thirty-Fifth {AAAI} Conference on
+               Artificial Intelligence {(AAAI} 2021), Virtual, February 8, 2021},
+  year      = {2021}
+  }
+  </pre>
   </div>
 
 
