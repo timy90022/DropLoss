@@ -1,9 +1,17 @@
-# DropLoss for Long-Tail Instance Segmentation
-Ting-I Hsieh*, Esther Robb*, Hwann-Tzong Chen, Jia-Bin Huang
+# [AAAI 2021]DropLoss for Long-Tail Instance Segmentation
+
+[AAAI 2021] DropLoss for Long-Tail Instance Segmentation  
+Ting-I Hsieh*, Esther Robb*, Hwann-Tzong Chen, Jia-Bin Huang.  
+Association for the Advancement of Artificial Intelligence (AAAI), 2021
+
 
 
 ![Image](images/compare.png)
+Figure: Measuring the performance tradeoff. Comparisonbetween rare, common, and frequent categories AP for baselinesand our method. We visualize the tradeoff for ‘commonvs. frequent’ and ‘rare vs. frequent’as a Pareto frontier, wherethe top-right position indicates an ideal tradeoff between objectives.DropLoss achieves an improved tradeoff betweenobject categories, resulting in higher overall AP.
+
 This project is a pytorch implementation of *DropLoss for Long-Tail Instance Segmentation*. DropLoss improves long-tail instance segmentation by adaptively removing discouraging gradients to infrequent classes. A majority of the code is modified from [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2) and [tztztztztz/eql.detectron2](https://github.com/tztztztztz/eql.detectron2).  
+
+
 
 
 
@@ -78,7 +86,7 @@ If you use DropLoss, please use the following BibTeX entry.
 
 ```BibTeX
 @inproceedings{DBLP:conf/aaai/Ting21,
-  author 	= {Hsieh, Ting-I and Esther Robb and Chen, Hwann-Tzong and Jia-Bin Huang},
+  author 	= {Hsieh, Ting-I and Esther Robb and Chen, Hwann-Tzong and Huang, Jia-Bin},
   title     = {DropLoss for Long-Tail Instance Segmentation},
   booktitle = {Proceedings of the Workshop on Artificial Intelligence Safety 2021
                (SafeAI 2021) co-located with the Thirty-Fifth {AAAI} Conference on
